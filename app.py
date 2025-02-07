@@ -52,7 +52,6 @@ class Instructor(db.Model):
 
 with app.app_context():
     db.create_all()
-    r = db.session.query(Student.name,Course.name).join(Course).all()
 
 
 
